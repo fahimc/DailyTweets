@@ -35,6 +35,7 @@
 	}
 	function onBackClick()
 	{
+		document.getElementById("backToForm").style.display="none";
 		document.getElementById("resultsHolder").innerHTML="";
 		document.getElementById("theForm").style.display="block";
 		document.getElementById("refresh").style.display="none";
@@ -71,6 +72,8 @@
 	}
 	window.onCallback=function(data)
 	{
+		
+		if(data.results)
 		results = data.results;
 		if (window.localStorage)localStorage.results = results;
 		buildList();
@@ -79,6 +82,7 @@
 	function buildList()
 	{
 		document.getElementById("refresh").style.display="block";
+		document.getElementById("backToForm").style.display="block";
 		document.getElementById("resultsHolder").innerHTML="";
 		for(var a=0;a<results.length;a++)
 		{

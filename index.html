@@ -6,6 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>index</title>
 		<meta name="author" content="Fahim" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<!-- Date: 2013-05-19 -->
 		<script type="text/javascript" src="lib/com/fahimchowdhury/toolkit/toolkitMax-v1013-compressed.js"></script>
 		<script type="text/javascript" src="src/Main.js"></script>
@@ -13,23 +14,36 @@
 	</head>
 	<body>
 		<div class="header">
-			<h1>TweetJob</h1>
-			<div id="backToForm">back</div>
-			<div id="refresh">refresh</div>
+			<h1>TweetPuller</h1>
+			<div id="backToForm">
+				
+			</div>
+			<div id="refresh">
+				
+			</div>
 			<div class="clearBoth"></div>
 		</div>
 		<div id="theForm">
+			<h1>SETUP</h1>
 			<ul>
-				<li>Search Terms</li>
-				<li><input type="text" id="terms" /></li>
+				<li>
+					<p>
+						Add your Search Terms (for multiple separate them with a comma)
+					</p>
+				</li>
+				<li>
+					<input type="text" id="terms" />
+				</li>
+				<li class="right">
+					<div id="findButton">
+						SAVE
+					</div>
+				</li>
 			</ul>
-	
-			<div id="findButton">
-				find
-			</div>
+
 		</div>
 		<div id="resultsHolder">
-			
+
 		</div>
 	</body>
 </html>
